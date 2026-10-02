@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temperature Lab | Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Decoration -->
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+
+    <!-- Main Container -->
+    <main class="converter-container">
+
+        <!-- Header -->
+        <div class="header">
+
+            <div class="logo">
+                TEMP<span>.</span>
+            </div>
+
+            <div class="status">
+                <span></span>
+                LIVE CONVERTER
+            </div>
+
+        </div>
+
+
+        <!-- Hero Text -->
+        <section class="intro">
+
+            <p class="label">
+                TEMPERATURE LAB
+            </p>
+
+            <h1>
+                Convert temperature<br>
+                <span>without the guesswork.</span>
+            </h1>
+
+            <p class="description">
+                Enter a temperature, choose its unit, and instantly
+                convert it into Celsius, Fahrenheit and Kelvin.
+            </p>
+
+        </section>
+
+
+        <!-- Converter Card -->
+        <section class="converter-card">
+
+            <!-- Input -->
+            <div class="input-group">
+
+                <label for="temperature">
+                    Temperature
+                </label>
+
+                <input
+                    type="number"
+                    id="temperature"
+                    placeholder="Enter value"
+                    step="any"
+                >
+
+            </div>
+
+
+            <!-- Unit -->
+            <div class="input-group">
+
+                <label for="unit">
+                    From Unit
+                </label>
+
+                <select id="unit">
+
+                    <option value="celsius">
+                        Celsius (°C)
+                    </option>
+
+                    <option value="fahrenheit">
+                        Fahrenheit (°F)
+                    </option>
+
+                    <option value="kelvin">
+                        Kelvin (K)
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Convert Button -->
+            <button id="convertBtn">
+                Convert Temperature
+                <span>→</span>
+            </button>
+
+
+            <!-- Error Message -->
+            <p id="errorMessage"></p>
+
+
+            <!-- Results -->
+            <div class="results">
+
+                <div class="result-card">
+
+                    <span class="unit-symbol">
+                        °C
+                    </span>
+
+                    <div>
+                        <small>Celsius</small>
+                        <h2 id="celsiusResult">—</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="result-card">
+
+                    <span class="unit-symbol">
+                        °F
+                    </span>
+
+                    <div>
+                        <small>Fahrenheit</small>
+                        <h2 id="fahrenheitResult">—</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="result-card">
+
+                    <span class="unit-symbol">
+                        K
+                    </span>
+
+                    <div>
+                        <small>Kelvin</small>
+                        <h2 id="kelvinResult">—</h2>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Information -->
+        <section class="info-section">
+
+            <div>
+                <span>01</span>
+                <p>
+                    Enter a valid numerical temperature.
+                </p>
+            </div>
+
+            <div>
+                <span>02</span>
+                <p>
+                    Select the unit you are converting from.
+                </p>
+            </div>
+
+            <div>
+                <span>03</span>
+                <p>
+                    Get all three temperature values instantly.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+
+            <p>
+                Built with HTML • CSS • JavaScript
+            </p>
+
+            <p>
+                © 2026 Guru Bhavishya
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
